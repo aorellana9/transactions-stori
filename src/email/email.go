@@ -27,7 +27,6 @@ func SendEmail(totalBalance, averageDebitAmount, averageCreditAmount float64, tr
 	listEmails := os.Getenv("LIST_EMAIL_TO_SEND")
 	port := os.Getenv("PORT_EMAIL")
 	host := os.Getenv("HOST_EMAIL")
-	fmt.Println("emais", listEmails)
 	toList := []string{listEmails}
 	mimeHeaders := "MIME-version: 1.0;\nContent-Type: text/html; charset=\"UTF-8\";\n\n"
 
